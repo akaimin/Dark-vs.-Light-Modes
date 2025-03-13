@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        const button = document.getElementById("toggle-button");
+        if (element.classList.contains("dark-mode")) {
+          button.innerHTML = "Toggle light mode";
+        } else {
+          button.innerHTML = "Toggle dark mode";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Toggle Dark/Light Mode</h1>
+    <h2>Click the button to toggle between dark and light mode for page</h2>
+    <button onclick="myFunction()" id="toggle-button">Toggle light mode</button>
+  </body>
+</html>
